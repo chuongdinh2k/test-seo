@@ -32,7 +32,18 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
         images: [linkUrl],
       },
       alternates: {
-        canonical: `https://sydneyboathire.com.au/blog/${slug}`,
+        canonical: `https://test-ktqyyltgp-stephens-projects-faecb7d7.vercel.app/blog/${slug}`
+      },
+      robots: {
+        index: true,
+        follow: true,
+        googleBot: {
+          index: true,
+          follow: true,
+          'max-video-preview': -1,
+          'max-image-preview': 'large',
+          'max-snippet': -1,
+        },
       },
       keywords: ["blog", "seo", "next.js", "tailwindcss"],
       authors: [{ name: "Sydney Boat Hire" }],
