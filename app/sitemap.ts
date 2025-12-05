@@ -6,13 +6,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const routes: MetadataRoute.Sitemap = [
     {
-      url: baseUrl,
+      url: "https://stephendinh.cloud",
       lastModified: new Date(),
       changeFrequency: 'daily',
       priority: 1,
     },
     {
-      url: `${baseUrl}/blog`,
+      url: `https://stephendinh.cloud/blog`,
       lastModified: new Date(),
       changeFrequency: 'daily',
       priority: 0.8,

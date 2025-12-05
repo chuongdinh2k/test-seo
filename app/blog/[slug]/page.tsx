@@ -32,7 +32,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
         images: [linkUrl],
       },
       alternates: {
-        canonical: `https://test-ktqyyltgp-stephens-projects-faecb7d7.vercel.app/blog/${slug}`
+        canonical: `https://stephendinh.cloud/blog/${slug}`
       },
       robots: {
         index: true,
