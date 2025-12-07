@@ -14,8 +14,6 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
         description: `Blog Post Not Found`,
       };
     }
-    console.log("post", post.results[0].name.first);
-    console.log("post", post.results[0].name.last);
     const linkUrl = "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.connetweb.com%2Fit%2Fproduct%2Ftest-product-1%2F&psig=AOvVaw0gQEtbULazR2r_ocD7beEz&ust=1764740240682000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCPiWyuyXnpEDFQAAAAAdAAAAABAE"
     return {
       title: `Blog Post stephen ${post.results[0].name.first} ${post.results[0].name.last}`,
